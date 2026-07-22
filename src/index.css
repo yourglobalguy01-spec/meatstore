@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Oswald:wght@400;500;600;700&display=swap');
+@import 'tailwindcss';
+
+@theme {
+  /* Brand colors from the PDF */
+  --color-brand-navy: #1F3B54;
+  --color-brand-red: #bb333c; 
+  --color-brand-dark-red: #88282e;
+  --color-brand-black: #0D0D0D;
+  --color-brand-white: #ffffff;
+  
+  /* Override Tailwind default reds to use the brand's exact red */
+  --color-red-500: #bb333c;
+  --color-red-600: #bb333c;
+  --color-red-700: #bb333c;
+  --color-red-800: #88282e;
+  
+  /* Override dark gray to default to brand navy where used */
+  --color-gray-900: #1F3B54;
+  
+  /* Layout colors */
+  --color-bg-white: #FFFFFF;
+  --color-bg-gray: #F8F9FA;
+  --color-border: #E5E7EB;
+  
+  /* Text colors */
+  --color-text-primary: #1F3B54;
+  --color-text-secondary: #4B5563;
+  --color-text-tertiary: #9CA3AF;
+  
+  --font-heading: 'Oswald', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  --font-button: 'Inter', sans-serif;
+
+  /* Custom Animations */
+  --animate-pulse-slow: pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  --animate-bounce-slow: bounce 3s infinite;
+  --animate-float: float 5s ease-in-out infinite;
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+}
+
+:root {
+  --nav-height: 80px;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-bg-gray);
+  color: var(--color-text-primary);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Oswald', sans-serif;
+}
+
+.bg-gradient-btn {
+  background: var(--color-brand-red);
+}
