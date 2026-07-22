@@ -131,7 +131,7 @@ export function Checkout() {
                   </div>
                 )}
 
-                <div className="grid grid-cols-2 gap-6 mb-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
                   <div>
                     <label className="block text-sm font-button text-gray-400 mb-2">First Name *</label>
                     <input required type="text" name="firstName" value={formData.firstName} onChange={handleChange} className="w-full bg-black border border-[#333] rounded-xl px-4 py-3 text-white focus:border-[var(--color-brand-red)] focus:outline-none transition-colors" />
@@ -142,7 +142,7 @@ export function Checkout() {
                   </div>
                 </div>
 
-                <div className="grid grid-cols-2 gap-6 mb-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
                   <div>
                     <label className="block text-sm font-button text-gray-400 mb-2">Email Address *</label>
                     <input required type="email" name="email" value={formData.email} onChange={handleChange} className="w-full bg-black border border-[#333] rounded-xl px-4 py-3 text-white focus:border-[var(--color-brand-red)] focus:outline-none transition-colors" />
@@ -158,7 +158,7 @@ export function Checkout() {
                   <input required type="text" name="address" value={formData.address} onChange={handleChange} className="w-full bg-black border border-[#333] rounded-xl px-4 py-3 text-white focus:border-[var(--color-brand-red)] focus:outline-none transition-colors" placeholder="123 Meat Street" />
                 </div>
 
-                <div className="grid grid-cols-3 gap-6 mb-8">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
                   <div className="col-span-1">
                     <label className="block text-sm font-button text-gray-400 mb-2">City *</label>
                     <input required type="text" name="city" value={formData.city} onChange={handleChange} className="w-full bg-black border border-[#333] rounded-xl px-4 py-3 text-white focus:border-[var(--color-brand-red)] focus:outline-none transition-colors" />

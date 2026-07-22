@@ -3,10 +3,10 @@ import { ArrowRight } from 'lucide-react';
 
 export function ShopByCategory() {
   const categories = [
-    { name: "Prime Beef", desc: "Aged to perfection", img: "/images/prime_beef.png", span: "md:col-span-2 md:row-span-2" },
-    { name: "Poultry", desc: "Farm fresh", img: "/images/poultry.png", span: "md:col-span-1 md:row-span-1" },
-    { name: "Seafood", desc: "Wild caught", img: "/images/seafood.png", span: "md:col-span-1 md:row-span-1" },
-    { name: "Heritage Pork", desc: "Rich & flavorful", img: "/images/heritage_pork.png", span: "md:col-span-2 md:row-span-1" }
+    { name: "Prime Beef", desc: "Aged to perfection", img: "/images/prime_beef.png", span: "col-span-1 md:col-span-2 md:row-span-2" },
+    { name: "Poultry", desc: "Farm fresh", img: "/images/poultry.png", span: "col-span-1 md:row-span-1" },
+    { name: "Seafood", desc: "Wild caught", img: "/images/seafood.png", span: "col-span-1 md:row-span-1" },
+    { name: "Heritage Pork", desc: "Rich & flavorful", img: "/images/heritage_pork.png", span: "col-span-1 md:col-span-2 md:row-span-1" }
   ];
 
   return (

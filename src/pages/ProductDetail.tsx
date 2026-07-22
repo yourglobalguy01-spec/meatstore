@@ -135,12 +135,12 @@ export function ProductDetail() {
             <hr className="border-gray-200 mb-10" />
 
             {/* Metadata (Weight/Categories/Tags) */}
-            <div className="grid grid-cols-2 gap-8 mb-12">
-              <div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+              <div className="bg-gray-50 p-6 rounded-2xl border border-gray-100">
                 <p className="text-gray-400 font-button uppercase text-[10px] tracking-[0.2em] mb-2 font-bold">Weight</p>
                 <p className="font-heading font-bold text-xl text-[#1F3B54]">{product.weight ? `${product.weight} kg` : 'Standard Cut'}</p>
               </div>
-              <div>
+              <div className="bg-gray-50 p-6 rounded-2xl border border-gray-100">
                 <p className="text-gray-400 font-button uppercase text-[10px] tracking-[0.2em] mb-2 font-bold">Category</p>
                 <p className="font-heading font-bold text-xl text-[#1F3B54]">{product.categories?.map(c => c.name).join(', ') || 'General'}</p>
               </div>
